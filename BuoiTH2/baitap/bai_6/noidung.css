@@ -1,0 +1,40 @@
+/*  
+Tạo bộ chọn body để cố định phông chữ cho cả trang và bộ chọn #main để cố 
+định độ rộng vùng thông tin và trang sẽ chiếm và căn chỉnh vùng này nằm giữa 
+màn hình.  */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#main {
+    width: 1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  
+Tạo bộ chọn #head xác định chiều cao, màu nền, đường viền và khoảng cách so 
+với các vùng khác (khoảng cách so với vùng bên dưới – margin-bottom).  */
+
+#head{
+    height: 100px;
+    border-color: #ffffcc;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 5px;
+}
+
+/*Tiếp tục với định nghĩa bộ chọn #head-link, để xác định vùng đặt các liên kế đầu 
+trang:   */
+
+#head-link {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 5px;
+    clear: both ;
+}
