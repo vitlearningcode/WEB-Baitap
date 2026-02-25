@@ -3,6 +3,8 @@ Tạo bộ chọn body để cố định phông chữ cho cả trang và bộ c
 định độ rộng vùng thông tin và trang sẽ chiếm và căn chỉnh vùng này nằm giữa 
 màn hình.  */
 
+/* *{ box-sizing: border-box; } */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -15,13 +17,21 @@ body{
     margin-right: auto;
 }
 
+/* left 150
+content 600 + 5 margin trái + 5 margin phải = 610
+right 234 
+border: 1px solid => +2 vào mỗi khối
+ (150+2) + (610+2) + (234+2) = 1000px$
+ */
+
+
 /*  
 Tạo bộ chọn #head xác định chiều cao, màu nền, đường viền và khoảng cách so 
 với các vùng khác (khoảng cách so với vùng bên dưới – margin-bottom).  */
 
 #head{
     height: 100px;
-    border-color: #ffffcc;
+    background-color: #ffffcc;
     border: 1px solid #cdcdcd;
     margin-bottom: 5px;
 }
@@ -35,6 +45,47 @@ trang:   */
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid #cdcdcd;
+    background-color: #FF9999;
     margin-bottom: 5px;
     clear: both ;
+}
+
+/* Định nghĩa tiếp bộ chọn #left để xác định vùng cho nội dung bên trái, với độ
+rộng là 200px, chiều cao tối thiểu là 400px và đặc biệt chú ý tới mô tả float: left; 
+mô tả này làm cho vùng bên trái (DIV với ID là left) sẽ dạt sang bên trái nhường 
+chỗ cho các phân vùng khác: content và right). */
+
+#left {
+    width: 150px;
+    min-height: 400px;
+    float: left;
+    border: 1px solid #cdcdcd;
+    background-color: #ccffcc;
+    margin-bottom: 5px;
+}
+
+#content {
+    border: 1px solid #cdcdcd;
+    width: 600px;
+    min-height: 400px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px  ;
+    margin-bottom: 5px;
+}
+
+#right {
+    border: 1px solid #cdcdcd;
+    width: 234px;
+    min-height: 400px;
+    float: right;
+    background-color: #ff99cc;
+    margin-bottom: 5px;
+}
+
+#footer {
+    height: 50px;
+    clear: both;/* Giúp footer không bị đẩy lên bởi các khối float */
+    border: 1px solid #cdcdcd;
+    background-color: #ffff66;
 }
