@@ -1,0 +1,22 @@
+.tablelist {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #ebddbc;;
+}
+
+.tablelist th {
+    margin: 0;
+    padding: 4px 6px;
+    border: 1px solid #ebddbc;
+    background-color: #f1efd8;
+}
+
+.tablelist td {
+    margin: 0;
+    padding: 4px;
+    border: 1px solid #ebddbc;
+}
