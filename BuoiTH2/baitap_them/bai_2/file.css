@@ -5,7 +5,19 @@
     padding: 0;
     border-collapse: collapse;
     border-spacing: 0px;
-    border: 1px solid #ebddbc;;
+    border: 1px solid #ebddbc;
+
+    /* border-collapse: collapse
+    cách hiển thị đường viền (border) giữa các ô trong bảng
+    👉 Khi dùng collapse
+        Các đường viền giữa các ô gộp lại thành một đường duy nhất.
+        Nhìn bảng sẽ liền mạch, không bị viền đôi.
+
+    border-spacing: 0px;
+    👉 Thuộc tính này quy định khoảng cách giữa các ô trong bảng
+    ⚠ Lưu ý quan trọng:
+        border-spacing chỉ hoạt động khi border-collapse: separate.
+     */
 }
 
 .tablelist th {
