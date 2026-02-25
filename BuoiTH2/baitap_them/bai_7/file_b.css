@@ -1,0 +1,101 @@
+/* Thiết lập hộp tiêu chuẩn */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4e8fb; /* Màu nền tím cực nhạt */
+}
+
+/* --- HEADER --- */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #58257b; /* Màu chữ tím đậm */
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/* --- NAVBAR (Thanh điều hướng) --- */
+.navbar {
+    overflow: hidden;
+    background-color: #6d2891; /* Nền menu tím */
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right; /* Đẩy nút "Đăng ký" sang phải */
+}
+
+.navbar a:hover {
+    background-color: #924ab8; /* Tím sáng hơn khi di chuột */
+}
+
+/* --- CHIA CỘT BẰNG FLEXBOX --- */
+.row {  
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 15px;
+    gap: 15px; /* Tạo khoảng hở 15px giữa các cột */
+}
+
+/* Cột chính */
+.main {   
+    flex: 7; /* Chiếm 7 phần (Tương đương 70%) */
+    background-color: white;
+    padding: 20px;
+}
+
+/* Cột phải */
+.side {
+    flex: 3; /* Chiếm 3 phần (Tương đương 30%) */
+    background-color: white;
+    padding: 20px;
+}
+
+/* Hộp mô phỏng hình ảnh */
+.fakeimg {
+    background-color: #cda8df; /* Màu hộp ảnh tím nhạt */
+    width: 100%;
+    padding: 20px;
+    color: #444;
+}
+
+/* ==========================================================
+   TÍNH NĂNG RESPONSIVE (TỰ THÍCH ỨNG TRÊN MÀN HÌNH NHỎ)
+   ========================================================== */
+
+/* Khi màn hình hẹp hơn 700px (Máy tính bảng/Điện thoại) */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column; /* Ép 2 cột rớt xuống thành hàng dọc */
+    }
+}
+
+/* Khi màn hình quá nhỏ (dưới 400px) */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none; /* Hủy xếp hàng ngang */
+        width: 100%; /* Xếp các nút menu rớt xuống thành từng hàng */
+    }
+}
