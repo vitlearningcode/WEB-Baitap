@@ -1,0 +1,41 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div {
+    border: 1px solid #FF00FF; 
+    border-radius: 8px;        /* Bo tròn*/
+    width: 500px;             
+    padding: 5px;             
+    margin: auto;           
+}
+
+img {
+    width: 400px;
+    display: block;
+    margin: 10px auto;  /* căn giữa khung */
+   
+}
+
+span.tieude1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 40px;
+    color: blue;
+    text-shadow: 2px 2px #ff00ff;
+
+}
+ span.tieude2 {
+    font-size: 40px;
+    color: red;
+ }
+
+ span.noidung1 {
+    color: #4169E1;
+ }
+ 
+
+span.noidung2 {
+    color: #FF8C00;
+}

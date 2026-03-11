@@ -1,0 +1,23 @@
+table{
+    border: 5px groove #6633ff;
+    padding: 1px;
+}
+
+th, td {
+    /* text-align: center; */
+    border: thin solid #ffffff;
+    padding: 5px;
+}
+
+tr.head {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background-color: #6633ff;
+}
+tr.odd {
+    background-color: #ffeeff;
+}
+tr.even{
+    background-color: #ccccff;
+}

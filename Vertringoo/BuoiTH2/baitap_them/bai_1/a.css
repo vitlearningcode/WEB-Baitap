@@ -1,0 +1,22 @@
+#menu {
+    width: 900px;
+    height: 35px;
+    background-color: #0ff;
+}
+
+#menu a {
+    display: block;
+    height: 30px;
+    padding-top: 5px;
+    width: 120px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#menu a:hover {
+    background-color: #00f;
+    color: #fff;
+    font-weight: bold;
+}

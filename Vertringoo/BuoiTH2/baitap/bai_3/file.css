@@ -1,0 +1,55 @@
+a {
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px;
+    border: thin solid white;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+    background-color: #4169e1
+
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #eb878f;
+}
+
+a:active {
+    color: #ffffff;
+    background-color: #1e90ff;
+}
+
+b {
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+   
+    width: 150px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px;
+    border: thin solid rgb(36, 28, 28);
+}
+
+b:link, b:visited {
+    color: #ffffff;
+    background-color: #4169e1
+
+}
+
+b:hover {
+    color: #ffffff;
+    background-color: #eb878f;
+}
+
+b:active {
+    color: #ffffff;
+    background-color: #1e90ff;
+}
